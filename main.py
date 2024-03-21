@@ -14,24 +14,6 @@ else:
 
 nltk.download('punkt')
 
-# url = "https://www.cnn.com/business/live-news/doj-apple-antitrust-lawsuit-03-21-24/index.html"
-
-# article = Article(url)
-
-# article.download()
-# article.parse()
-
-# article.nlp()
-
-#print(f"Title: {article.title}")
-# print(f"Author: {article.authors}")
-# print(f"Publication date: {article.publish_date}")
-# print(f"Summary: {article.summary}") 
-
-
-
-
-
 def summarize():
     user_input = url_textbox.get()
     article = Article(user_input)
@@ -111,8 +93,6 @@ summary_label.pack()
 summary_text = tk.Text(height = 80, width=140)
 summary_text.config(state="disabled", font=("Times New Roman", 16))
 summary_text.pack()
-
-
 
 
 window.mainloop()
